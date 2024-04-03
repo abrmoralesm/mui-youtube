@@ -1,12 +1,22 @@
-import { Button, Container, Typography } from "@mui/material";
+import { Button, Container } from "@mui/material";
+import { Box } from "@mui/system";
 
 export default function App() {
   return (
     <Container sx={{ border: 3, boxShadow: 3, pb: 2 }}>
       <h1>App</h1>
-      <Typography variant='h1' component="h2">Titulo 1</Typography>
-      <Typography variant='h1' component="span">Titulo 2</Typography>
-      <Typography variant='body1' textAlign="center" mt={20} >Titulo  3</Typography>
+      <Box
+        sx={{
+          border: 2,
+          p: 5,
+          borderColor: "peru",
+          bgcolor: "#111",
+          color: "white",
+        }}
+        component="span"
+      >
+        Pero que hermoso es MUI
+      </Box>
       <Button variant='contained'> Mi primer botón</Button>
     </Container>
   );
