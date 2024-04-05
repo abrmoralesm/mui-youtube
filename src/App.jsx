@@ -1,22 +1,34 @@
-import { Button, Container, Typography } from "@mui/material";
-import AdbIcon from "@mui/icons-material/Adb";
-import AcUnitIcon from "@mui/icons-material/AcUnit";
+import { Container, Grid } from "@mui/material";
 
 export default function App() {
   return (
     <Container>
-      <h1>App</h1>
-      <Typography variant='h3' color='primary'>
-        H3 título
-      </Typography>
-      <Button variant='contained' color='error' startIcon={<AdbIcon/>}>
-        {" "}
-        Mi primer botón
-      </Button>
-      <Button variant='outlined' color='success'endIcon={<AcUnitIcon/>}>
-        {" "}
-        Mi primer botón
-      </Button>
+      <Grid container spacing={6}>
+        <Grid item xs={12} sm={6} md={4}>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+            corporis quaerat nulla eius, sint quasi impedit neque unde dolorum
+            ducimus hic. Veniam vitae ullam incidunt numquam cum ratione modi
+            consectetur.
+          </p>
+        </Grid>
+        <Grid item xs={12} sm={6} md={4}>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+            corporis quaerat nulla eius, sint quasi impedit neque unde dolorum
+            ducimus hic. Veniam vitae ullam incidunt numquam cum ratione modi
+            consectetur.
+          </p>
+        </Grid>
+        <Grid item xs={12} sm={12} md={4}>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi
+            corporis quaerat nulla eius, sint quasi impedit neque unde dolorum
+            ducimus hic. Veniam vitae ullam incidunt numquam cum ratione modi
+            consectetur.
+          </p>
+        </Grid>
+      </Grid>
     </Container>
   );
 }
